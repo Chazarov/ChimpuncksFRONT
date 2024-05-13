@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Название сайта</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <style>
+        @font-face {
+            font-family: 'Teachers';
+            src: url('Fonts/Teachers/Teachers-Medium.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+  <div class="page-wrapper">
+    <aside id="navigation-drawer" class="closed">
+      <div class="drawer-content">
+        <div class="user-profile">
+          <img src="https://placekitten.com/100/100" alt="Avatar" class="avatar">
+          <div>
+            <strong class="teachers-font">Иванов</strong>
+            <span class="teachers-font">Иван</span>
+          </div>
+        </div>
+        <hr class="divider">
+        <ul class="drawer-menu">
+          <li class="menu-item">
+            <a href="#">
+              <i class="material-icons">my_library_books</i>
+              Главная
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="#">
+              <i class="material-icons">web_asset</i>
+              Лента
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="#">
+              <i class="material-icons">assignment</i>
+              Задачи
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="#">
+              <i class="material-icons">business_center</i>
+              Успеваемость
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="#">
+              <i class="material-icons">chat</i>
+              Чат
+            </a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+
+    <main>
+        <header>
+            <div class="header-container">
+                <button id="menu-button">&#9776;</button>
+                <h1>Название сайта</h1>
+            </div>
+            <hr class="divider">
+        </header>
+        <div id="content">
+        {%block content%}
+
+        {% endblock %}
+        </div>
+
+
+        <nav id="navigation-bar">
+          <a href="#" class="nav-item active" data-index="0">
+            <i class="material-icons">person</i>
+            <span>Основные данные</span>
+          </a>
+          <a href="index1.html" class="nav-item" data-index="1">
+            <i class="material-icons">link</i>
+            <span>Связка профилей</span>
+          </a>
+          <a href="index2.html" class="nav-item" data-index="2">
+            <i class="material-icons">lock</i>
+            <span>Безопасность</span>
+          </a>
+        </nav>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
